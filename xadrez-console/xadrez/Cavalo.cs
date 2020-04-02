@@ -40,7 +40,7 @@ namespace xadrez
                 matriz[posicao.Linha, posicao.Coluna] = true;
             }
 
-            posicao.DefinirValores(Posicao.Linha - 1, Posicao.Coluna + 1);
+            posicao.DefinirValores(Posicao.Linha - 2, Posicao.Coluna + 1);
             if (Tabuleiro.PosicaoValida(posicao) && PodeMover(posicao))
             {
                 matriz[posicao.Linha, posicao.Coluna] = true;
